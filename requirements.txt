@@ -1,0 +1,10 @@
+fastparquet
+ipykernel
+jupyterlab
+matplotlib
+nbformat
+numpy
+pandas
+pip
+scikit-learn
+seaborn
