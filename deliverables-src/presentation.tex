@@ -156,14 +156,12 @@
             \label{fig:Prophet-Weekly}
         \end{figure}
     \end{frame}
-\section{Conclusion}
-    \begin{frame}{Model Evaluation}
-        \begin{enumerate}
-            \item Prophet models that incorporated lockdowns outperformed their counterparts. \pause
-            \item ARIMA’s linear approach limited its ability to capture non-linear patterns. \pause
-            \item Weekly aggregation helped reduce noise, thus had the lowest AIC and RMSE scores.
-        \end{enumerate}
+    \begin{frame}{Handling Inconsistent Data}
+        The initial test train split was inadequate because the data had a sudden change in trend very close to
+        the split date. To ensure model efficacy the models were also trained on the original test data to 
+        see if it could accurately capture the new trend.
     \end{frame}
+\section{Conclusion}
     \begin{frame}{ARIMA VS Prophet}
         \begin{figure}
             \centering
@@ -171,26 +169,12 @@
             \label{fig:Model-Comparison}
         \end{figure}
     \end{frame}
-    \begin{frame}{Finalized Models}
-        The initial test train split was inadequate because the data had a sudden change in trend very close to
-        the split date. To ensure model efficacy the models were also trained on just the original test data to 
-        see if it could accurately capture the new trend.
+    \begin{frame}{Finalized Model}
         \begin{figure}
             \centering
             \includegraphics[height=0.47\paperheight]{assets/Model-Comparison-Split.png}
             \label{fig:Model-Comparison-Split}
         \end{figure}
-    \end{frame}
-    \begin{frame}{Future Action}
-        \begin{itemize}
-            \item Unused attributes that could be further focused on:
-                \begin{itemize}
-                    \item Blend
-                    \item Size
-                    \item Variety \pause
-                \end{itemize}
-            \item Further research into other models used for time-series data
-        \end{itemize}
     \end{frame}
     \begin{frame}{Conclusion}
         \begin{itemize}
@@ -205,5 +189,12 @@
             result.
         \end{itemize}
     \end{frame}
-
+    \begin{frame}{\textellipsis The End}
+        \begin{center}
+            {\huge \textbf{Any Questions?}}
+        \end{center}
+        \begin{center}
+            \includegraphics[height=0.5\paperheight]{assets/https_github_co_.png}
+        \end{center}
+    \end{frame}
 \end{document}
